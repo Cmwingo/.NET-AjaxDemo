@@ -8,7 +8,7 @@ using AjaxDemo.Models;
 namespace AjaxDemo.Migrations
 {
     [DbContext(typeof(AjaxDemoContext))]
-    [Migration("20170221195234_Initial")]
+    [Migration("20170221223107_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -19,13 +19,14 @@ namespace AjaxDemo.Migrations
 
             modelBuilder.Entity("AjaxDemo.Models.Destination", b =>
                 {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
                     b.Property<string>("City");
 
                     b.Property<string>("Country");
 
-                    b.Property<int>("Id");
-
-                    b.HasKey("City");
+                    b.HasKey("Id");
 
                     b.ToTable("Destinations");
                 });

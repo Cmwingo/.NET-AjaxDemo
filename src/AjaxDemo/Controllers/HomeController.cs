@@ -44,5 +44,14 @@ namespace AjaxDemo.Controllers
             var randomDestinationList = db.Destinations.OrderBy(r => Guid.NewGuid()).Take(destinationCount);
             return Json(randomDestinationList);
         }
+
+        [HttpPost]
+        public IActionResult NewDestination(string newCity, string newCountry)
+        {
+            Destination newDestination = new Destination(newCity, newCountry);
+            db.Destinations.Add(newDestination);
+            db.SaveChanges();
+            return Json(newDestination);
+        }
     }
 }

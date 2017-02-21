@@ -1,5 +1,5 @@
---temp-output:c:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\obj\Debug\netcoreapp1.0\
---out:c:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\bin\Debug\netcoreapp1.0\AjaxDemo.dll
+--temp-output:C:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\bin\src\AjaxDemo\obj\Debug\netcoreapp1.0\
+--out:C:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\bin\src\AjaxDemo\bin\Debug\netcoreapp1.0\AjaxDemo.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -194,12 +194,9 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"c:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\obj\Debug\netcoreapp1.0\AjaxDemodotnet-compile.deps.json",AjaxDemo.deps.json
-c:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\Program.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\Startup.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\Controllers\HomeController.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\Migrations\20170221223107_Initial.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\Migrations\20170221223107_Initial.Designer.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\Migrations\AjaxDemoContextModelSnapshot.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\Models\AjaxDemoContext.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\Models\Destination.cs
+--resource:"C:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\bin\src\AjaxDemo\obj\Debug\netcoreapp1.0\AjaxDemodotnet-compile.deps.json",AjaxDemo.deps.json
+C:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\Program.cs
+C:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\Startup.cs
+C:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\Controllers\HomeController.cs
+C:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\Models\AjaxDemoContext.cs
+C:\Users\epicodus\documents\visual studio 2015\Projects\AjaxDemo\src\AjaxDemo\Models\Destination.cs

@@ -82,10 +82,27 @@
             });
         });
     </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.new-destination').submit(function (event) {
+                event.preventDefault();
+                $.ajax({
+                    url: '@Url.Action("NewDestination")',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: $(this).serialize(),
+                    success: function (result) {
+                        var resultMessage = 'You\'ve added a new destination to the database!<br>Id: ' + result.id + '<br>City: ' + result.city + '<br>Country: ' + result.country;
+                        $('#result6').html(resultMessage);
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <h2>Basic AJAX</h2>
-    <h4 class="hello-ajax">Hello AJAX</h4>  
+    <h4 class="hello-ajax">Hello AJAX</h4>
     <div id="result1"></div>
 
     <h2>Using Parameters</h2>
@@ -107,6 +124,16 @@
         <button type="submit">Submit</button>
     </form>
     <div id="result5"></div>
+
+    <h2>Submitting data with a POST request</h2>
+    <form action="NewDestination" class="new-destination">
+        <label for="newCity">City: </label>
+        <input type="text" name="newCity" />
+        <label for="newCountry">Country: </label>
+        <input type="text" name="newCountry" />
+        <button type="submit">Submit</button>
+    </form>
+    <div id="result6"></div>
 
 </body>
 </html>
