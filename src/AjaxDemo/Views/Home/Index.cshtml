@@ -60,6 +60,28 @@
             });
         });
     </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.display-random-database-items').submit(function (event) {
+                event.preventDefault();
+                console.log($(this).serialize());
+                $.ajax({
+                    url: '@Url.Action("RandomDestinationList")',
+                    type: 'GET',
+                    data: $(this).serialize(),
+                    dataType: 'json',
+                    success: function (result) {
+                        var stringResult = '<ul>';
+                        for (var i = 0; i < result.length; i++) {
+                            stringResult += '<li>' + result[i].city + ', ' + result[i].country + '</li>';
+                        }
+                        stringResult += '</ul>';
+                        $('#result5').html(stringResult);
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <h2>Basic AJAX</h2>
@@ -77,6 +99,14 @@
     <h2>Displaying a view</h2>
     <h4 class="display-view">Display view</h4>
     <div id="result4"></div>
+
+    <h2>Using a form to make a GET request</h2>
+    <form action="RandomDestinationList" class="display-random-database-items">
+        <label for="destinationCount">How many destinations would you like to see?</label>
+        <input type="number" name="destinationCount" />
+        <button type="submit">Submit</button>
+    </form>
+    <div id="result5"></div>
 
 </body>
 </html>
